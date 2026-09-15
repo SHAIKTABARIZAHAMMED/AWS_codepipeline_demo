@@ -6,5 +6,6 @@ phases:
       - echo "Build Started"
 
 artifacts:
+  base-directory: simple-web-app
   files:
     - '**/*'

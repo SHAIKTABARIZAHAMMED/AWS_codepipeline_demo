@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AWS CI/CD Demo</title>
 
     <style>
@@ -10,161 +10,72 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            font-family: "Segoe UI", sans-serif;
         }
 
         body {
-            background: linear-gradient(135deg, #0f172a, #1e3a8a);
-            color: white;
-            min-height: 100vh;
+            background: #f4f7fc;
+            color: #333;
         }
 
         header {
-            padding: 20px 60px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.8rem;
-            font-weight: bold;
-        }
-
-        nav a {
+            background: linear-gradient(135deg, #232f3e, #0073bb);
             color: white;
-            text-decoration: none;
-            margin-left: 20px;
-            transition: 0.3s;
-        }
-
-        nav a:hover {
-            color: #93c5fd;
-        }
-
-        .hero {
-            display: flex;
-            justify-content: center;
-            align-items: center;
             text-align: center;
-            min-height: 80vh;
-            padding: 20px;
+            padding: 80px 20px;
         }
 
-        .hero-content {
-            max-width: 800px;
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 15px;
         }
 
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
+        header p {
             font-size: 1.2rem;
-            line-height: 1.8;
-            color: #e2e8f0;
-            margin-bottom: 30px;
+            opacity: 0.9;
         }
 
-        .btn {
-            display: inline-block;
-            background: #2563eb;
-            color: white;
-            padding: 14px 28px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: 0.3s;
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 50px 20px;
         }
 
-        .btn:hover {
-            background: #1d4ed8;
-            transform: translateY(-2px);
-        }
-
-        .features {
+        .cards {
             display: flex;
-            justify-content: center;
-            gap: 30px;
-            padding: 50px;
+            gap: 25px;
             flex-wrap: wrap;
+            justify-content: center;
         }
 
         .card {
-            background: rgba(255,255,255,0.1);
-            backdrop-filter: blur(10px);
+            background: white;
             padding: 25px;
+            width: 300px;
             border-radius: 15px;
-            width: 280px;
-            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
         }
 
         .card h3 {
+            color: #0073bb;
             margin-bottom: 15px;
-            color: #93c5fd;
         }
 
-        footer {
+        .status {
             text-align: center;
-            padding: 20px;
-            color: #cbd5e1;
+            background: white;
+            margin-top: 50px;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
         }
-    </style>
-</head>
 
-<body>
+        .status span {
+            display: inline-block;
+            background: #28a745;
 
-<header>
-    <div class="logo">AWS CI/CD Demo</div>
-    <nav>
-        #Home</a>
-        #Features</a>
-        #Contact</a>
-    </nav>
-</header>
-
-<section class="hero">
-    <div class="hero-content">
-        <h1>Welcome to AWS CodePipeline Demo</h1>
-        <p>
-            This sample application demonstrates an automated CI/CD pipeline
-            using GitHub, AWS CodePipeline, and AWS CodeBuild. Every code push
-            automatically triggers a build and deployment workflow.
-        </p>
-        #Learn More</a>
-    </div>
-</section>
-
-<section class="features">
-    <div class="card">
-        <h3>Source Control</h3>
-        <p>
-            Integrated with GitHub repositories for automatic source retrieval
-            and change detection.
-        </p>
-    </div>
-
-    <div class="card">
-        <h3>Continuous Build</h3>
-        <p>
-            AWS CodeBuild compiles, tests, and packages the application with
-            every commit.
-        </p>
-    </div>
-
-    <div class="card">
-        <h3>Automated Delivery</h3>
-        <p>
-            CodePipeline orchestrates the entire deployment process from source
-            to production.
-        </p>
-    </div>
-</section>
-
-<footer>
-    <p>© 2026 AWS CI/CD Pipeline Demonstration Project</p>
-</footer>
-
-</body>
-</html>
